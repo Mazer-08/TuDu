@@ -8,6 +8,10 @@ const routes = require("./routes/ToDoRoutes");
 const app = express();
 const PORT = process.env.PORT || 5000
 
+app.get('/',(req,res) => {
+    res.send("Hello from TuDu!!");
+})
+
 //middleware
 //to handle cross-origin request
 app.use(cors())
